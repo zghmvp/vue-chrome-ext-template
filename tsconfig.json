@@ -1,0 +1,75 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "esnext", /* 指定ECMAScript目标版本: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */
+    "module": "esnext", /* 指定模块代码生成: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ], /* 指定要包含在编译中的库文件。 */
+    // "allowJs": true,                       /* 允许编译javascript文件. */
+    // "checkJs": true,                       /* 报告.js文件中的错误。 */
+    "jsx": "preserve", /* 指定JSX代码生成:'preserve'、' reactive -native'或'react'。 */
+    // "declaration": true,                   /* 生成相应的 '.d.ts' 文件。 */
+    // "declarationMap": true,                /* 为每个对应的 '.d.ts' 文件生成一个sourcemap */
+    "sourceMap": true, /* 生成相应的 '.map' 文件. */
+    // "outFile": "./",                       /* 连接并将输出发送到单个文件。 */
+    // "outDir": "./",                        /* 将输出结构重定向到目录。 */
+    // "rootDir": "./",                       /* 指定输入文件的根目录。用于用——outDir控制输出目录结构。 */
+    // "composite": true,                     /* 使项目编译 */
+    // "removeComments": true,                /* 不将注释发送到输出. */
+    // "noEmit": true,                        /* 不发出输出. */
+    "importHelpers": true, /* 从'tslib'导入emit帮助程序。 */
+    // "downlevelIteration": true,            /* 当目标为“ES5”或“ES3”时，为“for-of”、“spread”和“destructuring”中的迭代提供完全支持。 */
+    // "isolatedModules": true,               /* 将每个文件转换为一个单独的模块(类似于“ts.transpileModule”). */
+    /* Strict Type-Checking Options */
+    "strict": true, /* 启用所有严格的类型检查选项。 */
+    // "noImplicitAny": true,                 /* 使用隐含的“any”类型在表达式和声明上引发错误。 */
+    // "strictNullChecks": true,              /* 启用严格的空检查。 */
+    // "strictFunctionTypes": true,           /* 启用严格的函数类型检查。 */
+    "strictPropertyInitialization": false,    /* 在类中启用严格的属性初始化检查。 */
+    // "noImplicitThis": true,                /* 使用隐含的“any”类型在“this”表达式上引发错误。 */
+    // "alwaysStrict": true,                  /* 在严格模式下解析，并为每个源文件发出“use strict”。 */
+    /* Additional Checks */
+    // "noUnusedLocals": true,                /* 报告未使用的本地变量的错误。 */
+    // "noUnusedParameters": true,            /* 报告未使用参数的错误。 */
+    // "noImplicitReturns": true,             /* 当函数中不是所有代码路径都返回值时报告错误。 */
+    // "noFallthroughCasesInSwitch": true,    /* 在switch语句中报告fallthrough情况的错误。 */
+    /* Module Resolution Options */
+    "moduleResolution": "node", /* 指定模块解析策略:'node' (node .js)或'classic' (TypeScript pre-1.6)。 */
+    "baseUrl": ".", /* 用于解析非绝对模块名称的基本目录。 */
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }, /* 一系列条目，它们将导入重新映射到相对于“baseUrl”的查找位置。 */
+    // "rootDirs": [],                        /* 根文件夹列表，其组合内容表示运行时项目的结构。*/
+    // "typeRoots": [],                       /* 包含类型定义的文件夹列表。 */
+    "types": [
+      "webpack-env"
+    ], /* 编译中包含的类型声明文件。 */
+    "allowSyntheticDefaultImports": true, /* 允许从没有默认导出的模块进行默认导入。这并不影响代码发出，只是类型转换。 */
+    "esModuleInterop": true, /* 通过为所有导入创建命名空间对象，支持CommonJS和ES模块之间的互操作性。意味着“allowSyntheticDefaultImports”。 */
+    // "preserveSymlinks": true,              /* 不要解析符号链接的实际路径。 */
+    /* Source Map Options */
+    // "sourceRoot": "",                      /* 指定调试器应该定位TypeScript文件而不是源位置的位置。 */
+    // "mapRoot": "",                         /* 指定调试器应该定位映射文件而不是生成的位置的位置。 */
+    // "inlineSourceMap": true,               /* 发出带有源映射的单个文件，而不是单独的文件。 */
+    // "inlineSources": true,                 /* 将源文件与源文件一起发出;需要设置'- inlineSourceMap'或'- sourceMap'。 */
+    /* Experimental Options */
+    "experimentalDecorators": true, /* 启用对ES7装饰器的实验性支持。 */
+    // "emitDecoratorMetadata": true,         /* 启用对装饰器发出类型元数据的实验性支持。 */
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
